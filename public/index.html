@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | R.TUAL Hair Care</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="card">
+    <div class="logo">
+  <img src="/logo.png" alt="R.TUAL Hair Care">
+</div>
+    </div>
+
+    <form id="loginForm">
+      <label class="field">
+       <span class="icon">
+  <svg viewBox="0 0 24 24">
+    <circle cx="12" cy="7" r="4"></circle>
+    <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"></path> 
+  </svg>
+</span>
+        <input type="email" id="email" placeholder="Email" required />
+      </label>
+
+      <label class="field">
+       <span class="icon">
+ <svg viewBox="0 0 24 24">
+  <path d="M8 10V7a4 4 0 0 1 8 0v3"
+        fill="none"
+        stroke="black"
+        stroke-width="2"
+        stroke-linecap="round"/>
+
+  <rect x="5" y="10" width="14" height="11" rx="2" fill="black"/>
+
+  <circle cx="12" cy="15.5" r="1.5" fill="white"/>
+  </svg>
+</span>
+        <input type="password" id="senha" placeholder="Senha" required />
+      </label>
+
+      <div class="link-row">
+        <a href="#" onclick="alert('Função de recuperação pode ser adicionada depois.'); return false;">
+          Esqueceu a senha?
+        </a>
+      </div>
+
+      <button id="botaoEntrar" type="submit">ENTRAR</button>
+
+      <div id="mensagem" class="mensagem"></div>
+
+      <div class="bottom">
+        Não tem uma conta? <a href="/cadastro.html">Inscrever-se</a>
+      </div>
+    </form>
+  </main>
+
+  <script src="/login.js"></script>
+</body>
+</html>
